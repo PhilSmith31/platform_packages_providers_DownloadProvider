@@ -1069,8 +1069,6 @@ public final class DownloadProvider extends ContentProvider {
     public int update(final Uri uri, final ContentValues values,
             final String where, final String[] whereArgs) {
 
-        Helpers.validateSelection(where, sAppReadableColumnsSet);
-
         final Context context = getContext();
         final ContentResolver resolver = context.getContentResolver();
 
